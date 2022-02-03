@@ -81,8 +81,19 @@ footer {
 p {
   line-height: 1.5;
 }
+.full {
+  display: none;
+}
+.top {
+  background-color: aliceblue;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
 /*   MEDIA QUERIES  ------------------------------- */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   ul {
     display: flex;
     width: 0%;
@@ -115,11 +126,12 @@ p {
   .header-para {
     margin-right: 2em;
     text-align: left;
+    font-size: 20px;
   }
   .articles-section {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    padding: 0 26px;
     margin: 0 auto;
   }
   .articles-section article {
@@ -136,6 +148,13 @@ p {
     background-color: aliceblue;
     padding: 1em 0;
     border-top: lightgray 0.5px solid;
+  }
+  .top {
+    display: none;
+  }
+  .full {
+    display: inline-block;
+    margin-left: 20px;
   }
 }
 @media (min-width: 1024px) {
