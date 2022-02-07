@@ -28,6 +28,9 @@ footer {
   padding: 1em 0;
   border-top: lightgray 0.5px solid;
 }
+a:hover {
+  text-decoration: underline;
+}
 /*   MAIN STYLES  --------------------------------- */
 .header-para {
   width: 90%;
@@ -35,6 +38,7 @@ footer {
   margin-bottom: 3em;
   font-family: "Quicksand", sans-serif;
   font-size: 22px;
+  color: #917154;
 }
 .portfolio-pic {
   width: 65%;
@@ -45,7 +49,7 @@ footer {
   background-color: white;
 }
 .portfolio {
-  padding-top: 3em;
+  padding-top: 2em;
   margin-bottom: 3em;
 }
 .portfolio-section img {
@@ -92,6 +96,15 @@ a {
   text-transform: uppercase;
   color: black;
 }
+.skills {
+  background-color: white;
+  margin-bottom: 0;
+  border: solid black 0.5px;
+}
+.skills-para {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+}
 /*   MEDIA QUERIES  ------------------------------- */
 @media (min-width: 768px) {
   ul {
@@ -114,8 +127,7 @@ a {
   .navigation {
     display: flex;
     list-style: none;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: center;
     margin: 0 auto;
     margin-bottom: 3em;
   }
@@ -155,6 +167,9 @@ a {
     display: inline-block;
     margin-left: 20px;
   }
+  .top-nav li {
+    margin: 0 15px;
+  }
 }
 @media (min-width: 1024px) {
   h1 {
@@ -172,7 +187,6 @@ a {
     list-style: none;
     justify-content: space-between;
     margin: 0;
-    width: 30%;
   }
   .articles-section article {
     flex-basis: 33%;
@@ -211,5 +225,8 @@ a {
     align-items: center;
     background-color: aliceblue;
     border-top: lightgray 0.5px solid;
+  }
+  .top-nav .last-nav {
+    margin-right: 0;
   }
 }
